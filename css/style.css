@@ -1,3 +1,52 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHTS
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- LINE HEIGHTS
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+Letter spacing: 
+0.75px
+-0.5px
+
+
+--- 02 COLORS
+
+- Primary: #f8f3ee
+- Tints: #fbeddf
+        #fbebea
+- Shades: 
+- Accents:
+- Greys:
+#454545
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+
+--- 05 SHADOWS
+
+--- 06 BORDER_RADIUS
+Default: 9px 
+11px
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -12,11 +61,245 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  font-size: 1.6rem;
+  color: #454545;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 160rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.bordered-div {
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding: 5.2rem;
+}
+
+.line {
+  margin-bottom: 2.4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.09rem;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.5;
+}
+
+.link:hover {
+  color: #454545;
+  text-decoration: none;
+}
+
+.link:link,
+.link:visited {
+  color: #454545;
+  text-decoration: none;
+}
+
+.title {
+  align-self: flex-start;
+}
+
+/* HERO */
+
+.section-hero {
+  margin: 5.5rem auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
+  gap: 3.2rem;
+}
+
+.hero-photo {
+  overflow: hidden;
+  background-color: #f8f3ee;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero {
+  background-color: #fbebea;
+}
+
+.name {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.05;
+}
+
+.profession {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.profile-description {
+  line-height: 1.5;
+}
+
+/* GENERAL GRID */
+
+.general {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+  align-items: stretch;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-color: #fbebea;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #fbeddf;
+}
+
+.skills {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #fbeddf;
+}
+
+.expirience {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: #f8f3ee;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-color: #f8f3ee;
+}
+
+/* EXPIRIENCE */
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.project-img {
+  height: auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.project-ref {
+  align-self: center;
+}
+
+.project-img {
+  max-height: 25rem;
+}
+
+/* CONTACTS */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style-type: none;
+}
+
+/* EDUCATION */
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #454545;
+}
+
+.education-point {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.courses-list {
+  display: flex;
+  justify-items: space-around;
+  gap: 1.6rem;
+  margin-left: 2.4rem;
+}
+
+.courses-point {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.course {
+  line-height: 1.5;
+}
+/* SKILLS */
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* LANG */
+.lang-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }

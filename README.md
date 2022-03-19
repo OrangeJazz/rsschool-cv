@@ -1,1 +1,1 @@
-https://OrangeJazz.github.io/rsschool-cv/cv
+https://OrangeJazz.github.io/rsschool-cv/

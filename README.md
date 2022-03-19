@@ -1,2 +1,1 @@
-# rsschool-cv
-CV task for RS School Stage1
+https://OrangeJazz.github.io/rsschool-cv/
